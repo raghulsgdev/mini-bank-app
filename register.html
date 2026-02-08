@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Bank | Open Account</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section>
+            <h1 class="hd">Mini <span class="span">Bank</span></h1>
+        </section>
+
+        <section class="nav">
+            <a class="txt" href="./index.html">Dashboard</a>
+            <a class="txt" href="./Deposit.html">Deposit</a>
+            <a class="txt" href="./debit.html">Debit</a>
+            <a class="txt" href="#regSection">Register</a>
+        </section>
+    </header>
+
+    <section class="bg_clrr">
+        <main id="regSection">
+            <section class="dep_form">
+                <h1 class="debit_title">Open Account</h1>
+
+                <form>
+                    <label class="lbl_txt">Name</label>
+                    <input type="text" id="nameInpt" class="inp" placeholder="Enter Your Name">
+
+                    <label class="lbl_txt">Mobile Number</label>
+                    <input type="text" id="noInpt" class="inp" placeholder="Enter Mobile Number">
+
+                    <label class="lbl_txt">Date of Birth</label>
+                    <input type="date" id="dobInpt" class="inp">
+
+                    <label class="lbl_txt">Address</label>
+                    <input type="text" id="addInpt" class="inp" placeholder="Enter Your Address">
+
+                    <label class="lbl_txt">Email</label>
+                    <input type="email" id="mailInpt" class="inp" placeholder="Enter Your Email">
+
+                    <label class="lbl_txt">Initial Amount</label>
+                    <input type="text" id="amtInpt" class="inp" placeholder="Enter Amount">
+
+                    <section class="debit_btn_sec">
+                        <button type="submit" class="acc_btn" id="regBtn">Open Account</button>
+                    </section>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer_section">
+            <section class="footer-content">
+                <h2 class="hd">Mini <span class="span">Bank</span></h2>
+                <p>Secure • Transparent • Trusted Banking</p>
+            </section>
+            <p class="copy">© 2025 Mini Bank. All Rights Reserved.</p>
+        </footer>
+    </section>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

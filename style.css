@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #0A0F2D, #012E4A);
+    color: #fff;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, #0A0F2D, #012E4A);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    z-index: 100;
+    border-bottom: 1px solid rgba(226, 169, 34, 0.25);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+    color: #F0B429;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.txt {
+    color: #EDEDED;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.txt:hover {
+    color: #E2A922;
+}
+
+.txt::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #E2A922;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s ease;
+}
+
+.txt:hover::after {
+    width: 100%;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 22px;
+    color: #E2A922;
+    cursor: pointer;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 22px;
+    color: #E2A922;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+main {
+    margin-top: 70px;
+}
+
+.bal_section {
+    min-height: calc(100vh - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.inner_box {
+    width: 420px;
+    padding: 40px 30px;
+    text-align: center;
+    background: rgba(30, 30, 30, 0.45);
+    backdrop-filter: blur(14px);
+    border-radius: 18px;
+    border: 1px solid rgba(226, 169, 34, 0.35);
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.55);
+    transition: 0.35s ease;
+}
+
+.inner_box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 35px rgba(226, 169, 34, 0.25);
+}
+
+.inner_box h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #E2A922;
+    margin-bottom: 18px;
+}
+
+.inner_box p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #d6d6d6;
+}
+
+.bg_clr,
+.bg_clrr {
+    padding-top: 30px;
+}
+
+.dep_form {
+    width: 650px;
+    margin: 120px auto 50px;
+    padding: 45px;
+    background: rgba(10, 15, 30, 0.55);
+    border-radius: 18px;
+    border: 1px solid rgba(226, 169, 34, 0.28);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.45);
+}
+
+.debit_title {
+    text-align: center;
+    font-size: 34px;
+    color: #E2A922;
+    margin-bottom: 30px;
+}
+
+.lbl_txt {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: #EDEDED;
+}
+
+.inp {
+    width: 100%;
+    padding: 14px;
+    background: rgba(18, 18, 18, 0.65);
+    border: 1px solid rgba(226, 169, 34, 0.35);
+    border-radius: 12px;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 22px;
+}
+
+.inp:focus {
+    border-color: #E2A922;
+    box-shadow: 0 0 14px rgba(226, 169, 34, 0.45);
+}
+
+.inp::placeholder {
+    color: #bbaa6a;
+}
+
+.debit_btn_sec {
+    display: flex;
+    justify-content: center;
+}
+
+.acc_btn {
+    padding: 14px 40px;
+    font-size: 18px;
+    border-radius: 14px;
+    border: 1px solid #E2A922;
+    background: rgba(20, 20, 20, 0.8);
+    color: #E2A922;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.acc_btn:hover {
+    background: #E2A922;
+    color: #0D0D0D;
+    box-shadow: 0 0 22px rgba(226, 169, 34, 0.55);
+    transform: translateY(-2px);
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+footer span {
+    color: #c9a227;
+}
+
+.hd {
+    color: #c9a227;
+}
+
+.span {
+    color: #ffffff;
+}
+
+/* Media Query */
+@media (max-width: 600px) {
+
+    .bg_clrr {
+        height: 100vh;
+    }
+
+    .txt:active::after,
+    .txt:focus::after {
+        width: 100%;
+    }
+
+    header {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 10px;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0px;
+        padding-top: 5px;
+    }
+
+    .txt {
+        font-size: 14px;
+        white-space: nowrap;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .txt:active {
+        transform: scale(0.96);
+    }
+
+    .txt:active,
+    .txt:focus {
+        color: #E2A922;
+        font-weight: 600;
+        background: rgba(226, 169, 34, 0.12);
+        border-radius: 6px;
+    }
+
+    .txt {
+        font-size: 14px;
+        padding: 6px 10px;
+        white-space: nowrap;
+    }
+
+    .txt::after {
+        display: none;
+    }
+
+    .bal_section {
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    .inner_box {
+        width: 95%;
+        padding: 22px 18px;
+    }
+
+    .inner_box h2 {
+        font-size: 26px;
+    }
+
+    .inner_box p {
+        font-size: 14px;
+    }
+
+    .dep_form {
+        width: 95%;
+        padding: 22px;
+        margin-top: 110px;
+    }
+
+    .debit_title {
+        font-size: 24px;
+    }
+
+    .lbl_txt {
+        font-size: 14px;
+    }
+
+    .inp {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .acc_btn {
+        font-size: 14px;
+        padding: 10px 22px;
+    }
+}
